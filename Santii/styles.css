@@ -1,0 +1,162 @@
+/* Importar una fuente retro (como de videojuegos) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #FFDB58; /* Color amarillo mostaza */
+    font-family: 'Press Start 2P', cursive; /* Fuente retro estilo videojuego */
+    font-size: 25px; /* Puedes ajustar el tamaño si es necesario */
+}
+
+.description {
+    font-family: Arial, sans-serif; /* Tipografía normal */
+    font-size: 16px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin: 20px 0; /* Espacio arriba y abajo del texto */
+    font-weight: bold; 
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: 35px;
+    color: red; /* Color rojo para los números */
+    font-family: 'Press Start 2P', cursive;
+}
+
+.label {
+    font-size: 10px;
+    color: #587fff; /* Color negro para las etiquetas */
+    font-family: 'Press Start 2P', cursive;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 125px; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: auto;
+}
+
+button:hover img {
+    opacity: 0.8; /* Efecto hover para la imagen */
+}
+
+/* Iconos */
+button img.icon {
+    width: 80px; /* Tamaño de los íconos */
+    height: auto;
+    margin-bottom: 8px; /* Espacio entre el ícono y el texto */
+    display: block;
+}
+
+/* Texto de los botones */
+button span {
+    font-size: 12px;
+    font-weight: bold;
+    color: CornflowerBlue;
+    font-family: 'Press Start 2P', cursive; 
+    display: block;
+    margin-top: 10px; /* Espacio entre los títulos */
+    line-height: 1.5; /* Aumenta la separación entre líneas si hay varias palabras */
+}
+
+/* Espacio entre botones */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Aumenta la separación entre los botones */
+}
+
+/* Estilo para el contenedor de imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra las imágenes */
+}
+
+/* Estilo para las imágenes */
+.image-grid img {
+    width: 150px; /* Tamaño más pequeño para las imágenes */
+    height: auto;
+}
+
+.container {
+    text-align: center;
+}
+
+.playlist {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Para que sean responsivos en pantallas pequeñas */
+}
+
+.track {
+    text-align: center; /* Centrar imagen y audio */
+}
+
+.track img {
+    width: 150px; /* Tamaño de la imagen */
+    height: 225px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 200px;
+    height: 30px;
+}
+
+button#botonVolver {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button#botonVolver img {
+    width: 50px;  /* Tamaño de la flecha */
+    height: auto;
+}
+
+button#botonVolver:hover img {
+    opacity: 0.8;
+}
